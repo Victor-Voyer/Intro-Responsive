@@ -2,6 +2,10 @@ body{
     background-color: #F7F7F7;
 }
 
+#burger-menu{
+    display: none;
+}
+
 /* HTML ELEMENTS */
 
 h1{
@@ -94,4 +98,22 @@ h2{
     padding: 2em 3em;
     background-color: black;
     color: white;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+  .header-container_nav{
+    display: none;
+  }
+
+  #burger-menu{
+    display: block;
+    width: 10%;
+  }
+  .header-container_nav_menu-burger{
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+  }
 }
